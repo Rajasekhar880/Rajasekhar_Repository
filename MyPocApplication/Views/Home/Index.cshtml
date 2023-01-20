@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rebeccapurple;
+        }
+
+        .jumbotron {
+            background-color: #FBD603;
+        }
+    </style>
+    <div class="jumbotron">
+        <h1 style="color: darkgreen;"> MitraTech</h1>
+        <h2 style="color: orange;">
+            <p>
+                <ul class="nav navbar-collapse">
+                    <li style="color: darkgreen; text-align: right;">@Html.ActionLink("Login", "Login", "User")</li>
+                    <li style="color: darkgreen; text-align: right;">@Html.ActionLink("Register", "Register", "User")</li>
+                    <li style="color: darkgreen; text-align: right;">@Html.ActionLink("DashBoard", "DashBoard", "User")</li>
+                </ul>
+            </p>
+        </h2>
+    </div>
+  
+</body>
+</html>
